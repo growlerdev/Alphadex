@@ -87,6 +87,18 @@ for (int i = 0; i < items.Count; i++)
 // Output: A: Task 1, B: Task 2, C: Task 3
 ```
 
+**CAD drawing view naming:**
+```csharp
+var viewService = new AlphaNumericService();
+var views = new List<string> { "Front View", "Right Side View", "Top View", "Isometric View" };
+
+for (int i = 0; i < views.Count; i++)
+{
+    Console.WriteLine($"View {viewService.GetString(i)}: {views[i]}");
+}
+// Output: View A: Front View, View B: Right Side View, View C: Top View, View D: Isometric View
+```
+
 ### Custom Character Sets
 
 You can override the default character set by passing a custom string to the constructor.
@@ -100,19 +112,6 @@ alphaSvc.GetString(1); // returns "O"
 alphaSvc.GetString(2); // returns "M"
 alphaSvc.GetString(7); // returns "T"
 alphaSvc.GetString(8); // returns "SS" (wraps around with prefix)
-
-// Using numbers
-var numericSvc = new AlphaNumericService("0123456789");
-numericSvc.GetString(0);  // returns "0"
-numericSvc.GetString(10); // returns "00"
-numericSvc.GetString(11); // returns "01"
-
-// Using binary
-var binarySvc = new AlphaNumericService("01");
-binarySvc.GetString(0); // returns "0"
-binarySvc.GetString(1); // returns "1"
-binarySvc.GetString(2); // returns "00"
-binarySvc.GetString(3); // returns "01"
 ```
 
 ## How It Works
