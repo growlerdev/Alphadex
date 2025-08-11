@@ -77,6 +77,7 @@ jobs:
         done
 
   Deploy_NuGet-org:
+    if: github.ref == 'refs/heads/main'
     needs: Build
     runs-on: windows-latest
     
