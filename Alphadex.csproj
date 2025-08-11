@@ -3,22 +3,22 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Growler</Authors>
-    <Copyright>2023</Copyright>
-    <PackageTags>Alphabet Letter ABC CharacterSequence</PackageTags>
+    <Copyright>2025</Copyright>
+    <PackageTags>Alphabet Letter ABC CharacterSequence Sequence </PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <RepositoryUrl>https://github.com/growlerdev/Abc123</RepositoryUrl>
+    <RepositoryUrl>https://github.com/growlerdev/Alphadex</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Description>Infinitely correlates an array of characters to a zero based index.</Description>
+    <Description>A .NET library for converting zero-based indices to alphabetic sequences, similar to Excel column naming.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Abc123.xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Alphadex.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   
   
