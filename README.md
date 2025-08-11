@@ -1,10 +1,10 @@
-# Abc123
+# Alphadex
 
-[![GitHub Release](https://img.shields.io/github/v/release/growlerdev/abc123?display_name=release&logo=github&label=release)](https://github.com/growlerdev/abc123/releases)
-[![GitHub Release](https://img.shields.io/github/v/release/growlerdev/abc123?include_prereleases&display_name=release&logo=github&label=latest%20build)](https://github.com/growlerdev/abc123/releases)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/abc123?logo=nuget&color=9932CC)](https://www.nuget.org/packages/abc123)
-[![GitHub License](https://img.shields.io/github/license/growlerdev/abc123?color=salmon)](LICENSE.md)
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/growlerdev/abc123/main.yml?logo=githubactions&logoColor=white&label=Build%20and%20Deploy)](https://github.com/growlerdev/abc123/actions/workflows/main.yml)
+[![GitHub Release](https://img.shields.io/github/v/release/growlerdev/Alphadex?display_name=release&logo=github&label=release)](https://github.com/growlerdev/Alphadex/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/growlerdev/Alphadex?include_prereleases&display_name=release&logo=github&label=latest%20build)](https://github.com/growlerdev/Alphadex/releases)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Alphadex?logo=nuget&color=9932CC)](https://www.nuget.org/packages/Alphadex)
+[![GitHub License](https://img.shields.io/github/license/growlerdev/Alphadex?color=salmon)](LICENSE.md)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/growlerdev/Alphadex/main.yml?logo=githubactions&logoColor=white&label=Build%20and%20Deploy)](https://github.com/growlerdev/Alphadex/actions/workflows/main.yml)
 
 A .NET library for converting zero-based indices to alphabetic sequences, similar to Excel column naming (A, B, C, ... Z, AA, AB, etc.). Perfect for generating column names, sequence identifiers, or any scenario where you need human-readable alphabetic progression.
 
@@ -21,19 +21,19 @@ A .NET library for converting zero-based indices to alphabetic sequences, simila
 Install the package via NuGet Package Manager:
 
 ```bash
-dotnet add package Abc123
+dotnet add package Alphadex
 ```
 
 Or via Package Manager Console in Visual Studio:
 
 ```powershell
-Install-Package Abc123
+Install-Package Alphadex
 ```
 
 ## Quick Start
 
 ```csharp
-using Abc123;
+using Alphadex;
 
 var service = new AlphaNumericService();
 Console.WriteLine(service.GetString(0));  // Output: "A"

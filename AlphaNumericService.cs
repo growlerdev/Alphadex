@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Abc123
+namespace Alphadex
 {
     public class AlphaNumericService
     {
